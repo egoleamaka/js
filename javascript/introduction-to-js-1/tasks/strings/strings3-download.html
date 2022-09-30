@@ -23,12 +23,18 @@
 
 
     </section>
+    let fixedQuote = quote.toLowerCase();
 
   </body>
   <script>
     const quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
     // Add your code here
+    
+   let firstLetter = fixedQuote.slice(0,1);
+   let fixedQuote = fixedQuote.replace(firstLetter, firstLetter.toUpperCase())
+   let fixedQuote = fixedQuote.replace('green eggs and ham', 'egusi and eba')
+   let finalQuote = `${fixedQuote}.`;
 
     // Don't edit the code below here!
 
